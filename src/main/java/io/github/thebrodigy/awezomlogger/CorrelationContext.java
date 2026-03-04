@@ -6,8 +6,8 @@ import org.springframework.web.context.request.ServletRequestAttributes;
 import java.util.UUID;
 
 public class CorrelationContext {
-    
-    private static final ThreadLocal<String> correlationId = new ThreadLocal<>();
+
+    private static final ThreadLocal<String> correlationId = ThreadLocal.withInitial(() -> null);
     private static final String CORRELATION_HEADER = "X-Correlation-ID";
     private static final String MDC_KEY = "correlationId";
     

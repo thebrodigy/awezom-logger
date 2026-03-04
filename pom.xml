@@ -11,9 +11,10 @@
 
     <groupId>io.github.thebrodigy</groupId>
     <artifactId>awezom-logger</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.2-SNAPSHOT</version>
     <name>awezom-logger</name>
     <description>awezom-logger</description>
+    <packaging>jar</packaging>
     <url>https://github.com/thebrodigy/awezom-logger</url>
     <developers>
         <developer>
@@ -38,6 +39,16 @@
             <artifactId>spring-boot-starter-web</artifactId>
             <version>${spring-boot.version}</version>
         </dependency>
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjrt</artifactId>
+            <version>1.9.7</version>
+        </dependency>
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+            <version>1.9.7</version>
+        </dependency>
 
 
         <dependency>
@@ -48,13 +59,5 @@
         </dependency>
     </dependencies>
 
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
 
 </project>
